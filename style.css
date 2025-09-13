@@ -1,13 +1,10 @@
 body {
   background-color: #2e2e2c;
-  color: #a0a099
-  ;
+  color: #a0a099;
   font-size: 20px;
-}
-
-body {
   font-family: sans-serif;
 }
+
 p,
 ul {
   border: 2px solid #73726e;
@@ -29,13 +26,48 @@ ul {
   display: block;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
 .box {
-  border: 5px solid rgb(0, 0, 0);
+  border: 5px solid rgb(43, 41, 41);
   background-color: rgb(83, 83, 83);
-  padding: 25px;
-  margin: 40px;
   width: 400px;
-  height: 400px;
+  height: 350px;
+  padding: 10px;                /* removed duplicate */
+  text-align: center;
+  box-shadow: 4px 4px 10px #00000033;
+  overflow: hidden;
+  transition: transform 0.3s ease, max-height 0.5s ease;
+  max-height: 300px;
+  cursor: pointer;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  max-height: 800px;
+}
+
+.box:hover .hidden-text {
+  max-height: 500px;
+}
+
+.hidden-text {
+  margin-top: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.box img {
+  display: block;
+  margin: 10px auto 0;
+  height: auto;
 }
 
 .alternate {
