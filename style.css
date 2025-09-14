@@ -1,8 +1,17 @@
 body {
-  background-color: #2e2e2c;
+  background: repeating-linear-gradient(
+   90deg,  
+    #2e2e2c,
+    #2e2e2c 30px,
+    #4e4e4b 30px,
+    #4e4e4b 60px
+  );
   color: #a0a099;
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: "Alexandria", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 p, ul {
@@ -24,7 +33,7 @@ ul {
   display: block;
 }
 
-.container {
+.post-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,8 +41,8 @@ ul {
   margin-top: 50px;
 }
 
-.box {
-  border: 5px solid rgb(43, 41, 41);
+.post {
+  border: 5px solid rgb(48, 48, 48);
   background-color: rgb(83, 83, 83);
   width: 400px;
   padding: 10px;
@@ -45,12 +54,12 @@ ul {
   cursor: pointer;
 }
 
-.box:hover {
+.post:hover {
   transform: scale(1.05);
   max-height: 1000px;
 }
 
-.hidden-text {
+.post__details {
   margin-top: 10px;
   max-height: 0;
   overflow: hidden;
@@ -58,11 +67,11 @@ ul {
   text-align: center;
 }
 
-.box:hover .hidden-text {
+.post:hover .post__details {
   max-height: 900px;
 }
 
-.hidden-text a {
+.post__link {
   display: inline-block;
   text-decoration: none;
   padding: 5px 15px;
@@ -70,7 +79,7 @@ ul {
   margin-top: 10px;
 }
 
-.box img {
+.post__image {
   display: block;
   margin: 10px auto 0;
   height: auto;

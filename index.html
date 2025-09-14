@@ -1,47 +1,53 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pet rock blog</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pet rock blog</title>
+  <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-      <div class="box">
-        this is my pet rock.
-        <img src="petrock.png" alt="petrock" style="width: 250px; height: auto;">
-        <div class="hidden-text">
-          his name is rocco! i don't think elmo likes him but at least zoey does... i guess?
-          <br>
-          <a href="https://www.youtube.com/watch?v=MgyAWij3SLk">elmo hates rocco</a>
-        </div>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="box">
-        he likes the swings.
-        <img src="roccorock.png" alt="rockonswing" style="width: 250px; height: auto;">
-        <div class="hidden-text">
-          he falls off every time i push him, but he doesn't mind. a win is a win?
-          <br>
-          <a href="https://www.youtube.com/watch?v=x5H31-SWy5c">rocco always gets what he wants!</a>
-        </div>
+  <div class="post-container">
+    <div class="post">
+      this is my pet rock.
+      <img src="petrock.png" alt="petrock" class="post__image" style="width: 250px; height: auto;">
+      <div class="post__details">
+        his name is rocco! i don't think elmo likes him but at least zoey does... i guess?
+        <br>
+        <a href="https://www.youtube.com/watch?v=MgyAWij3SLk" class="post__link">elmo hates rocco</a>
       </div>
     </div>
+  </div>
 
-<div class="container">
-      <div class="box">
-        he likes oatmeal rasin cookies.
-        <img src="rocco.png" alt="rockwithcookies" style="width: 250px; height: auto;">
-        <div class="hidden-text">
-       chocolate chip isn't his favorite, so he gives them to elmo. i don't think elmo likes him though.
-          <br>
-          <a href="https://www.youtube.com/watch?v=DFBMcwaSdns">his favorite :3</a>
-        </div>
+  <div class="post-container">
+    <div class="post">
+      he likes the swings.
+      <img src="roccorock.png" alt="rockonswing" class="post__image" style="width: 250px; height: auto;">
+      <div class="post__details">
+        he falls off every time i push him, but he doesn't mind. a win is a win?
+        <br>
+        <a href="https://www.youtube.com/watch?v=x5H31-SWy5c" class="post__link">rocco always gets what he wants!</a>
       </div>
     </div>
+  </div>
+
+  <div class="post-container">
+    <div class="post post--favorite">
+      he likes oatmeal rasin cookies.
+      <img src="rocco.png" alt="rockwithcookies" class="post__image" style="width: 250px; height: auto;">
+      <div class="post__details">
+        chocolate chip isn't his favorite, so he gives them to elmo. i don't think elmo likes him though.
+        <br>
+        <a href="https://www.youtube.com/watch?v=DFBMcwaSdns" class="post__link">his favorite :3</a>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
