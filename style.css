@@ -5,14 +5,12 @@ body {
   font-family: sans-serif;
 }
 
-p,
-ul {
+p, ul {
   border: 2px solid #73726e;
   padding: 0.2em;
 }
 
-.block,
-li {
+.block, li {
   border: 2px solid #cecdc5;
   padding: 0.2em;
 }
@@ -38,10 +36,9 @@ ul {
   border: 5px solid rgb(43, 41, 41);
   background-color: rgb(83, 83, 83);
   width: 400px;
-  height: 350px;
-  padding: 10px;                /* removed duplicate */
+  padding: 10px;
   text-align: center;
-  box-shadow: 4px 4px 10px #00000033;
+  box-shadow: 4px 4px 10px #000000b7;
   overflow: hidden;
   transition: transform 0.3s ease, max-height 0.5s ease;
   max-height: 300px;
@@ -50,11 +47,7 @@ ul {
 
 .box:hover {
   transform: scale(1.05);
-  max-height: 800px;
-}
-
-.box:hover .hidden-text {
-  max-height: 500px;
+  max-height: 1000px;
 }
 
 .hidden-text {
@@ -62,6 +55,19 @@ ul {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease;
+  text-align: center;
+}
+
+.box:hover .hidden-text {
+  max-height: 900px;
+}
+
+.hidden-text a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 .box img {
